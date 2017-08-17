@@ -1,11 +1,13 @@
 import React from     'react';
-import { Button } from 'react-bootstrap';
+import { Button, ButtonToolbar, ButtonGroup } from 'react-bootstrap';
 
 const Pagination = ({onSetPrevPage, onSetNextPage}) => (
-	<div>
-		<Button onClick={() => onSetPrevPage()}>Prev</Button>
-		<Button onClick={() => onSetNextPage()}>Next</Button>
-	</div>
+		<ButtonToolbar>
+			<ButtonGroup>
+				<Button onClick={onSetPrevPage}>Prev</Button>
+				<Button onClick={onSetNextPage}>Next</Button>
+			</ButtonGroup>
+		</ButtonToolbar>
 );
 
 export default Pagination;

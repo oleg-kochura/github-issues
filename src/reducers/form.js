@@ -1,4 +1,4 @@
-import { UPDATE_FORM_FIELD }                         from '../constants';
+import { UPDATE_FORM_FIELD }  from '../constants';
 
 
 const initialState = {
